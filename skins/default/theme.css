@@ -1,0 +1,19 @@
+* {
+	color: black;
+}
+body {
+	background-color: #291703;
+}
+#main {
+	background-image: url(bg.png);
+}
+
+.overlay {
+	color: black;
+}
+
+#main > .content > #main-menu-title > div > p {
+	color: white;
+	font-weight: bolder;
+	margin-bottom: 5px;
+}

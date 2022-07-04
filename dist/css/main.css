@@ -1,0 +1,354 @@
+/*Globals*/
+@font-face {
+	font-family: "San Francisco Display Medium";
+	src: url('SFUIText-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	font-family: "San Francisco Display Medium";
+	color: black;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+body {
+	overflow: hidden;
+	font-size: 2.4vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	max-width: 100vw;
+	min-width: 100vw;
+	max-height: 100vh;
+	min-height: 100vh;
+}
+
+
+/*Screens*/
+#main {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background-image: url(../../skins/default/bg.png);
+}
+#main > .content {
+	position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+	min-height: 100vh;
+	text-align: center;
+	padding: 10vh 0;
+}
+
+#main > .content > #coin-block {
+	overflow: hidden;
+	/*margin-bottom: 10vh;*/
+	position: absolute;
+	bottom: 0;
+}
+#main > .content > #coin-block > #coin {
+	height: 90vw;
+	width: 90vw;
+	margin: 0 auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	border-radius: 5000px;
+}
+
+#main > .content > #coin-counter > p {
+	font-family: "San Francisco Display Medium";
+	font-size: 10vw;
+	font-weight: 400;
+	line-height: 10vw;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bolder;
+}
+#main > .content > #coin-counter > .title {
+	font-family: "San Francisco Display Medium";
+	font-size: 4vw;
+	line-height: 4vw;
+	font-weight: 200;
+	margin: 0;
+	color: white;
+	font-weight: bolder;
+}
+
+#main > .content > #power-counter > .title {
+	font-family: "San Francisco Display Medium";
+	font-size: 4vw;
+	line-height: 4vw;
+	font-weight: 200;
+	margin: 0;
+	color: white;
+	font-weight: bolder;
+}
+#main > .content > #power-counter > p {
+	font-family: "San Francisco Display Medium";
+	font-size: 6vw;
+	font-weight: 400;
+	line-height: 6vw;
+	margin-bottom: 5px;
+	color: white;
+	font-weight: bolder;
+}
+
+#main > .content > #main-menu-title {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#main > .content > #main-menu-title > div {
+	text-align: center;
+	margin: 0;
+	padding: 0 5px;
+}
+#main > .content > #main-menu-title > div > p {
+	font-family: "San Francisco Display Medium";
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 13px;
+	color: #505050;
+	margin-bottom: -5px;
+	color: white;
+	font-weight: bolder;
+	margin: 0;
+	padding: 0;
+}
+
+#main > .content > #main-menu-btns {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#main > .content > #main-menu-btns > div {
+	text-align: center;
+	margin: 0;
+	padding: 0 5px;
+}
+#main > .content > #main-menu-btns > div > .menubtn {
+	width: 100%;
+	/*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+	/*background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;*/
+	margin: 0;
+}
+
+
+.overlay {
+	min-height: 100vh;
+	max-height: 100vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	position: absolute;
+	bottom: -100vh;
+	left: 0;
+	z-index: 20;
+	background-color: white;
+	color: black;
+}
+.overlay > .overlay-bg {
+	min-height: 100vh;
+	max-height: 100vh;
+	min-width: 100vw;
+	max-width: 100vw;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #262626;
+}
+.overlay > .overlay-bg > .overlay-control-block {
+	background-color: #161616;
+	text-align: center;
+	max-height: 10vh;
+	min-height: 10vh;
+}
+.overlay > .overlay-bg > .overlay-control-block > p {
+	font-weight: bolder;
+	color: white;
+	margin: 0;
+	padding: 0;
+	line-height: 10vh;
+	vertical-align: middle;
+	max-height: 10vh;
+	min-height: 10vh;
+	min-width: 90vw;
+	max-width: 90vw;
+}
+.overlay > .overlay-bg > .overlay-control-block > .overlay-active {
+	display: inline-block;
+	color: white;
+	font-size: 2em;
+	max-height: 10vh;
+	min-height: 10vh;
+	min-width: 10vw;
+	max-width: 10vw;
+	text-align: center;
+	float: left;
+}
+
+.list {
+	padding: 0;
+	overflow-y: scroll;
+	max-height: 90vh;
+}
+.list > .list-menu {
+	background-color: #161616;
+	margin: 0;
+}
+.list > .list-menu > p {
+	padding: 3px 0 3px 0;
+	margin-bottom: 5px;
+	color: #686868;
+	font-weight: bolder;
+}
+.list > .list-menu > .active {
+	border-radius: 50px;
+	color: white;
+	background-color: #444444;
+}
+.list > .list-item {
+	margin: 0 15px;
+	padding: 10px 0;
+	border-bottom: 1px solid #E2A81F;
+	list-style: none;
+}
+.list > .list-item:visited {
+	text-decoration: none;
+}
+.list > .list-item:hover {
+	text-decoration: none;
+}
+.list > .list-item > .item-input-box {
+	text-align: center;
+	width: 100%;
+}
+.list > .list-item > .item-input-box > input {
+	color: black;
+	width: 100%;
+	/*border: 1px solid white;*/
+	font-size: 1em;
+	-webkit-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	border: 0;
+	outline: none;
+	border-radius: 5000px;
+	background-color: #444444;
+	color: white;
+	text-align: center;
+}
+.list > .list-item > .item-input-box > input:focus {
+	background-color: white;
+	color: black;
+	text-align: left;
+}
+.list > .list-item > .item-count {
+	margin: .65em 5px 0 0;
+	font-size: 1.3em;
+	height: 1.3em;
+	color: #E2A81F;
+	text-align: center;
+	width: 1.5em;
+}
+.list > .list-item > .item-img {
+	width: 3.8em;
+	height: 3.8em;
+	border: 1px solid #E2A81F;
+	border-radius: 500px;
+	margin-right: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.list > .list-item > .item-img-quad {
+	width: 3.8em;
+	height: 3.8em;
+	border: 1px solid #E2A81F;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+.list > .list-item > .item-info {
+	font-size: 120%;
+}
+.list > .list-item > .item-info > .item-uname {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-overflow: ellipsis;
+	width: 50vw;
+	overflow: hidden;
+	white-space: nowrap;
+	color: white;
+}
+.list > .list-item > .item-info > .item-uname > .role {
+	margin: 0 5px 0 0;
+	padding: 0 2px;
+	text-align: center;
+	border-radius: 0.3em;
+	border: 1px solid black;
+	font-size: 0.7em;
+}
+.role {
+	margin: 3.65em 0 0 -7px;
+	padding: 0 4px;
+	text-align: center;
+	vertical-align: bottom;
+	border-radius: 500px;
+	border: 1px solid black;
+	font-size: 0.7em;
+}
+.list > .list-item > .item-info > .item-desc {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 80%;
+	color: gray;
+}
+.list > .list-item > .item-desc {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 80%;
+	color: white;
+	position: absolute;
+	right: 17px;
+	margin: 20px 0 0 0;
+}
+.list > .list-item > .item-info > .item-action-btn {
+	background-color: #E2A81F;
+	color: white;
+	padding: 2px 10px;
+	border-radius: 50px;
+	max-height: calc(4px + 1.5em);
+	vertical-align: middle;
+	font-size: 85%;
+	display: inline-block;
+	float: left;
+}
+.list > .list-item > .item-info > .item-action-btn:active {
+	background-color: #E2A81F;
+}
+.list > .list-item > .item-info > .item-action-btn > p {
+	background-color: white;
+	color: #E2A81F;
+	border: 1px solid white;
+	border-radius: 50px;
+	font-size: 50%;
+	line-height: 100%;
+	width: 2em;
+	height: 2em;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 3px 0 0 0;
+	margin: -3px 0 0 0;
+}
