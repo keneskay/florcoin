@@ -1,0 +1,122 @@
+:root {
+    --background_page: #ffffff !important;
+}
+div.Icon--24 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.buttons_custom.Icon--24 {
+    width: 48px !important;
+    height: 64px !important;
+}
+.buttons_custom.Icon--24>svg {
+    width: 42px !important;
+    height: 44px !important;
+}
+div.Icon--32 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.buttons_custom.Icon--32 {
+    width: 48px !important;
+    height: 64px !important;
+}
+.buttons_custom.Icon--32>svg {
+    width: 42px !important;
+    height: 44px !important;
+}
+.Cell--ios .Cell__before-in > .Icon {
+    padding: 3px 22px 10px 0;
+}
+.CellIconCustom {
+    width: 42px !important;
+    height: 44px !important;
+}
+.Cell--android .Cell__before-in > .Icon, .Cell--android .Cell__dragger > .Icon {
+    padding: 3px 19px 4px 0;
+}
+.btn {
+    text-decoration: none;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.btn-rating {
+    text-align: center;
+    background: #eb6d4a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d712dc, #f151f0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1e0f1e, #1e1e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 0px 0px 0px #7b00f0;
+    -moz-box-shadow:    0px 0px 0px 0px #8300f8;
+    box-shadow:         0px 0px 0px 0px #8b00ff;
+}
+
+.btn-exchange {
+    text-align: center;
+    background: #eb6d4a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d712dc, #f151f0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1e0f1e, #1e1e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 0px 0px 0px #7b00f0;
+    -moz-box-shadow:    0px 0px 0px 0px #8300f8;
+    box-shadow:         0px 0px 0px 0px #8b00ff;
+}
+
+.btn-shop {
+    text-align: center;
+    background: #eb6d4a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d712dc, #f151f0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1e0f1e, #1e1e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 0px 0px 0px #7b00f0;
+    -moz-box-shadow:    0px 0px 0px 0px #8300f8;
+    box-shadow:         0px 0px 0px 0px #8b00ff;
+}
+
+.btn-kat {
+    text-align: center;
+    background: #eb6d4a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d712dc, #f151f0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #1e0f1e, #1e1e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 0px 0px 0px 0px #7b00f0;
+    -moz-box-shadow:    0px 0px 0px 0px #8300f8;
+    box-shadow:         0px 0px 0px 0px #8b00ff;
+}
+
+button:focus {
+    outline: 0;
+    color: whitel;
+}
+
+.text-buttons {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.HeaderButton--android .Icon--24 {
+    padding: 0 !important;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.click__item:active {
+    opacity: 0.8;
+}
+
+.Search--android.Search--default .Search__before .Icon, .Search--android.Search--default .Search__after .Icon {
+    padding: 0px;
+    color: #aaaeb3;
+    color: #aaaeb3;
+    color: var(--icon_secondary);
+}
+
+/* font-family: TT Commons,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif; */

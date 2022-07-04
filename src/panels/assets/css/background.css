@@ -1,0 +1,7 @@
+.View--ios.View--header .Panel__in {
+background:#ffffff;
+}
+
+.clicked:active {
+	zoom: 1.1;
+}
